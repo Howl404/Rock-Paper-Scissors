@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2980b9;
+}
+
+.main-container {
+  width: 80%;
+  margin: 1rem auto;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.8fr;
+  justify-items: center;
+  margin: 1rem;
+}
+
+.score-win {
+  display: grid;
+  grid-template-columns: 17rem;
+  grid-template-rows: auto 1fr;
+  padding: 2rem;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  gap: 1rem 3rem;
+  font-size: 5rem;
+}
+
+.computer-image,
+.player-image {
+  display: flex;
+  align-items: center;
+  font-size: 8rem;
+}
+
+.choose {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.choose button {
+  font-size: 1.5rem;
+  background: #36afff;
+  background-image: -webkit-linear-gradient(top, #36afff, #2980b9);
+  background-image: -moz-linear-gradient(top, #36afff, #2980b9);
+  background-image: -ms-linear-gradient(top, #36afff, #2980b9);
+  background-image: -o-linear-gradient(top, #36afff, #2980b9);
+  background-image: linear-gradient(to bottom, #36afff, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  border: 1px white solid;
+  padding: 0.5rem 1rem;
+}
+
+.players {
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-around;
+}
+
+.win {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.restart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.restart button {
+  background: #36afff;
+  background-image: -webkit-linear-gradient(top, #36afff, #2980b9);
+  background-image: -moz-linear-gradient(top, #36afff, #2980b9);
+  background-image: -ms-linear-gradient(top, #36afff, #2980b9);
+  background-image: -o-linear-gradient(top, #36afff, #2980b9);
+  background-image: linear-gradient(to bottom, #36afff, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  border: 1px white solid;
+}
+
+.restart button:hover,
+.choose button:hover {
+  border: 1px black solid;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.winner {
+  color: green;
+}
+
+.looser {
+  color: red;
+}
